@@ -1,2 +1,9 @@
-# 占位文件：按《技术栈分工与代码结构》第 4 节「推荐代码目录结构」创建，待负责人补充实现。
-# response.py
+"""统一响应结构：{code, msg, data}。"""
+
+
+def ok(data, msg: str = "success"):
+    return {"code": 0, "msg": msg, "data": data}
+
+
+def fail(msg: str, code: int = 1):
+    return {"code": code, "msg": msg, "data": None}

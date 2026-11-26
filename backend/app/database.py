@@ -1,2 +1,19 @@
-# 占位文件：按《技术栈分工与代码结构》第 4 节「推荐代码目录结构」创建，待负责人补充实现。
-# database.py
+"""数据库连接与会话。"""
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
+
+from .config import DATABASE_URL
+
+connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+engine = create_engine(DATABASE_URL, pool_pre_ping=True, connect_args=connect_args)
+SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+Base = declarative_base()
+
+
+def get_db():
+    """FastAPI 依赖：每个请求一个 Session。"""
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

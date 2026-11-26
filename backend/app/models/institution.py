@@ -1,2 +1,13 @@
-# 占位文件：按《技术栈分工与代码结构》第 4 节「推荐代码目录结构」创建，待负责人补充实现。
-# institution.py
+"""机构表。"""
+from sqlalchemy import Column, DateTime, Integer, String, func
+
+from ..database import Base
+
+
+class Institution(Base):
+    __tablename__ = "t_institution"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String(64), unique=True, nullable=False, comment="机构全称")
+    short_name = Column(String(32), nullable=True, comment="简称")
+    created_at = Column(DateTime, server_default=func.now())

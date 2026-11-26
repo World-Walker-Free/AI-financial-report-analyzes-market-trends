@@ -1,2 +1,7 @@
-# 占位文件：按《技术栈分工与代码结构》第 4 节「推荐代码目录结构」创建，待负责人补充实现。
-# 待 C 补充 Python 依赖（Python 3.12）
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+SQLAlchemy==2.0.36
+pymysql==1.1.1
+pydantic==2.10.4
+pytest==8.3.4
+httpx==0.28.1
