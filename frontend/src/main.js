@@ -1,2 +1,9 @@
-// 占位文件：按《技术栈分工与代码结构》第 4 节「推荐代码目录结构」创建，待负责人补充实现。
-// main.js
+import Vue from 'vue'
+import App from './App.vue'
+import './styles/index.css'
+
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')

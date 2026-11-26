@@ -1,0 +1,37 @@
+{
+  "varieties": [
+    { "code": "RB2405", "name": "螺纹钢" },
+    { "code": "I2405", "name": "铁矿石" },
+    { "code": "P2405", "name": "棕榈油" }
+  ],
+  "overview": {
+    "date": "2024-03-29",
+    "bull": 4, "bear": 6, "flat": 4,
+    "institutions": 14, "coveredVarieties": 31, "reports": 37,
+    "parseRate": 98.7, "index": -14.3,
+    "delta": { "bull": -2, "bear": 1, "flat": 1 },
+    "range": { "start": "2024-03-01", "end": "2024-03-29" },
+    "totalReports": 3847, "totalInstitutions": 86, "totalVarieties": 31
+  },
+  "views": {
+    "bull": [{ "org": "中信期货", "reportId": "R0001", "url": "#" }, { "org": "国泰君安", "reportId": "R0002", "url": "#" }, { "org": "永安期货", "reportId": "R0003", "url": "#" }, { "org": "申银万国", "reportId": "R0004", "url": "#" }],
+    "bear": [{ "org": "海通期货", "reportId": "R0005", "url": "#" }, { "org": "一德期货", "reportId": "R0006", "url": "#" }, { "org": "光大期货", "reportId": "R0007", "url": "#" }, { "org": "兴业期货", "reportId": "R0008", "url": "#" }, { "org": "中粮期货", "reportId": "R0009", "url": "#" }, { "org": "长江期货", "reportId": "R0010", "url": "#" }],
+    "neutral": [{ "org": "中金财富", "reportId": "R0011", "url": "#" }, { "org": "五矿期货", "reportId": "R0012", "url": "#" }, { "org": "南华期货", "reportId": "R0013", "url": "#" }, { "org": "银河期货", "reportId": "R0014", "url": "#" }]
+  },
+  "history": [
+    { "date": "2024-03-18", "bull": 5, "bear": 5, "flat": 4, "reports": 30, "index": 0 },
+    { "date": "2024-03-19", "bull": 6, "bear": 4, "flat": 4, "reports": 33, "index": 14.3 },
+    { "date": "2024-03-20", "bull": 6, "bear": 5, "flat": 3, "reports": 28, "index": 7.1 },
+    { "date": "2024-03-21", "bull": 7, "bear": 4, "flat": 3, "reports": 35, "index": 21.4 },
+    { "date": "2024-03-22", "bull": 6, "bear": 5, "flat": 4, "reports": 31, "index": 6.7 },
+    { "date": "2024-03-25", "bull": 5, "bear": 5, "flat": 4, "reports": 29, "index": 0 },
+    { "date": "2024-03-26", "bull": 5, "bear": 6, "flat": 4, "reports": 36, "index": -6.7 },
+    { "date": "2024-03-27", "bull": 4, "bear": 6, "flat": 4, "reports": 34, "index": -14.3 },
+    { "date": "2024-03-28", "bull": 4, "bear": 6, "flat": 4, "reports": 32, "index": -14.3 },
+    { "date": "2024-03-29", "bull": 4, "bear": 6, "flat": 4, "reports": 37, "index": -14.3 }
+  ],
+  "ranking": {
+    "bull": [{ "name": "棕榈油", "value": 50 }, { "name": "铁矿石", "value": 45.5 }, { "name": "沪金", "value": 40 }, { "name": "豆粕", "value": 36.4 }, { "name": "菜籽油", "value": 33.3 }, { "name": "沪铜", "value": 30 }, { "name": "螺纹钢", "value": 27.3 }, { "name": "白糖", "value": 25 }, { "name": "棉花", "value": 22.2 }, { "name": "玻璃", "value": 20 }],
+    "bear": [{ "name": "苹果", "value": -80 }, { "name": "玉米", "value": -71.4 }, { "name": "沥青", "value": -70 }, { "name": "聚乙烯", "value": -66.7 }, { "name": "聚丙烯", "value": -66.7 }, { "name": "PTA", "value": -60 }, { "name": "纯碱", "value": -60 }, { "name": "豆油", "value": -57.1 }, { "name": "白糖", "value": -54.5 }, { "name": "菜粕", "value": -50 }]
+  }
+}
